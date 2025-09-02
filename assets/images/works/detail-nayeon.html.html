@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>로지텍 PRO X SUPERLIGHT 2 — 상세페이지</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+    margin: 0;
+    background: #fff;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-align: center;
+    }
+
+    main {
+      padding: 0;
+      margin: 0;
+    }
+
+    img.detail-block {
+      display: block;
+      margin: 0 auto;
+      max-width: 900px;
+      width: 100%;
+      height: auto;
+    }
+
+    .artboard-wrapper {
+      position: relative;
+      display: block;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .artboard-wrapper img.artboard {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+    }
+
+    .artboard-wrapper img.overlay-gif {
+      position: absolute;
+      top: 50%;
+      /* 더 아래로 내림 */
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1200px;
+      /* 더 크게 */
+      height: auto;
+      pointer-events: none;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <!-- 아트보드1 위에 gif 겹치기 -->
+    <div class="artboard-wrapper">
+      <img class="artboard" src="Artboard 1.png" alt="상세페이지 상단" />
+      <img class="overlay-gif" src="gif.gif" alt="겹쳐진 GIF" />
+    </div>
+
+    <!-- 아트보드1과 아트보드2 사이 공백 제거 후 바로 이어지게 -->
+    <img class="detail-block" src="Artboard 2.png" alt="상세페이지 중간 1" loading="lazy" style="margin-top:-4px;" />
+
+    <img class="detail-block" src="Artboard 3.png" alt="상세페이지 중간 2" loading="lazy" style="margin-top:-4px;" />
+    <img class="detail-block" src="Artboard 4.png" alt="상세페이지 하단" loading="lazy" style="margin-top:-4px;" />
+  </main>
+</body>
+
+</html>
